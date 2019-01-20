@@ -1,0 +1,924 @@
+@import 'fonts.css';
+
+html {
+	font-size: 14px;
+}
+
+body, ul, li, hr {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin-top: 8.5rem;
+	max-width: 100vw;
+}
+
+#hiden-menu > svg {
+    display: none;
+    height: 3rem;
+}
+
+@media screen and (max-width: 6500px) {
+	html {
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 3500px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 2000px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	nav {
+		display: none;
+	}
+	.links {
+		display: none;
+	}
+	.contact1 {
+		display: none;
+	}
+	#hiden-menu > svg {
+	display: block;
+	}
+	html {
+		font-size: 8px;
+	}
+	body {
+		margin-top: 5.5rem;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	html {
+		font-size: 4px;
+	}
+}
+
+#hiddenMenu {
+	width: 100%;
+	height: 100vh;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #1abc9c;
+	position: fixed;
+	z-index: 200;
+	top: 0;
+}
+
+.menu {
+	font: 3rem Roboto-Bold, sans-serif;
+	color: white;
+	margin: 0.5rem 0;
+}
+
+#deleteMenu {
+	display: flex;
+	position: absolute;
+	top: 5rem;
+	right: 5rem;
+}
+
+#deleteImg {
+	display: none;
+	width: 5rem;
+	height: 5rem;
+}
+
+header {
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	background-color: white;
+	border-bottom: 0.07rem solid black;
+	z-index: 100;
+}
+
+p {
+	margin: 2rem 0;
+}
+
+.container {
+	width: 66%;
+	margin: 0 auto;
+}
+
+nav {
+	background-color: #1abc9c;
+	padding: 1rem 0;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts {
+	display: flex;
+	align-items: center;
+}
+
+.phoneIcon {
+	width: 1.3rem;
+}
+
+.phoneNumber {
+	font: 1rem OpenSans-Light, sans-serif;
+	color: #fefefe;
+	margin-left: 0.35rem;
+	margin-right: 2.1rem;
+}
+
+.email {
+	font: 1rem OpenSans-Light, sans-serif;
+	color: #fefefe;
+	margin-left: 0.7rem;
+}
+
+ul {
+	display: flex;
+	color: #fefefe;
+	font: 1rem OpenSans-Light,sans-serif;
+}
+
+li {
+	margin-left: 2.1rem;
+}
+
+.imgNav {
+	margin-right: 0.7rem;
+}
+
+.logo {
+	font: 2.1rem Roboto-Light, sans-serif;
+	color: #555252;
+}
+
+.logoM {
+	font: 2.1rem Roboto-Black, sans-serif;
+	color: #1abc9c;
+}
+
+.info2 {
+	padding: 1.4rem 0;
+	align-items: center;
+}
+
+.links {
+	font: 1rem OpenSans-Bold, sans-serif;
+	color: #0f0101;
+}
+
+.home {
+	color: #1abc9c;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.forMenu {
+	margin: 0 0.5rem;
+	font: 1.3rem OpenSans, sans-serif;
+	color: #0f0101;
+}
+
+.slide1 {
+	height: 46.4rem;
+	background-image: url(../media/slide1/slide1.png);
+	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	background-size: 100vw 100%;
+	background-color: #000000ab;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide1>.container {
+	display: flex;
+	justify-content: center;
+}
+
+#slider {
+	display: flex;
+	overflow: hidden;
+	width: 980px;
+}
+
+#line {
+	display: flex;
+	align-items: center;
+	position: relative;
+	left: -288px;
+}
+
+.contentSlider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 400px;
+	width: 756px;
+}
+
+.nameSlide1 {
+	font: 3.4rem Roboto-Light, sans-serif;
+	color: #fffcfc;
+	text-align: center;
+	margin: 1.8rem;
+}
+
+.nameSlide1_1 {
+	font-family: Roboto-Bold,sans-serif;
+	color: #1abc9c;
+}
+
+.nameSlide1_2 {
+	font-family: OpenSans, sans-serif;
+}
+
+.nameSlide1_3 {
+	font-family: OpenSans-Semibold, sans-serif;
+	color: #1abc9c;
+}
+
+.buttonSlide1 {
+	padding: 1rem 2.1rem;
+	font: 1rem Roboto-Regular,sans-serif;
+	color: white;
+	border: 0.14rem solid #1abc9c;
+	background: none;
+}
+
+.markersSlide1 {
+	position: absolute;
+	font-size: 6.4rem;
+	padding: 0 1.8rem;
+	background-color: #1abc9c;
+	border: none;
+	top: calc(50% - 3.7rem);
+	color: white;
+}
+
+#right {
+	right: 0;
+}
+
+#left {
+	left: 0;
+}
+
+.secondSlide {
+	border-bottom: 0.07rem solid black;
+}
+
+.slide2 {
+	padding: 6.4rem 0 3.6rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.boxesSlide2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.imgSlide2 {
+	width: 4.28rem;
+}
+
+svg {
+	transition: 0.5s ease;
+}
+
+#settingsSlide2 {
+	width: 4.7rem;
+}
+
+#Layer_1 {
+	width: 4.15rem;
+}
+
+#Capa_1 {
+	width: 4.15rem;
+}
+
+#Capa_2 {
+	width: 4rem;
+}
+
+.nameSlide2 {
+	font: 1.3rem OpenSans-Semibold,sans-serif;
+	color: #555252;
+	text-align: center;
+	transition: 0.5s ease;
+}
+
+.textSlide2 {
+	font: 1rem OpenSans-Light, sans-serif;
+    margin-top: 2.1rem;
+    color: #515151;
+    text-align: center;
+}
+
+.boxesSlide2:hover svg, .boxesSlide2:hover .nameSlide2 {
+	fill: #1abc9c;
+	color: #1abc9c;
+}
+
+.slide3 {
+	padding: 5.7rem 0 4.3rem;
+}
+
+.forButtonsSlide3 {
+	display: flex;
+	width: 60%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5.7rem 0 7.1rem;
+}
+
+.buttonsSlide3 {
+	color: #000000ba;
+	border-radius: 0.21rem;
+	border: 0.07rem solid #959595;
+	background: none;
+	padding: 0.36rem 0.7rem;
+	font: 1rem Roboto-Medium, sans-serif
+}
+
+.forFirstButtonSlide3 {
+	position: relative;
+	display: flex;
+}
+
+#firstButtonSlide3 {
+	border: none;
+	background: #1abc9c;
+	color: white;	
+}
+
+.for8Slide3 {
+	position: absolute;
+	border: 0.07rem solid #323232;
+	border-radius: 50%;
+	font: 1.4rem Roboto-Bold, sans-serif;
+	background: white;
+	color: #1abc9c;
+	padding: 0.57rem 1rem;
+	top: -2.7rem;
+	right: -0.7rem;
+}
+
+.forImgSlide3 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 2.1rem;
+}
+
+.textSlide3 , .textSlide5 {
+	display: flex;
+	flex-direction: column;
+	width: 22%;
+	background: #e9f0fd;
+}
+
+.textSlide3 {
+	position: relative;
+}
+
+.boxForImgSlide3, .boxForImgSlide5 {
+	height: 20rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.productsSlide3 {
+	width: 12rem;
+}
+
+.descriptionsSlide3 {
+	width: 100%;
+	background-color: #323232;
+	display: flex;
+	transition: 0.3s ease;
+}
+
+.priceProductSlide3 {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 100%;
+	background: #ffffff7d;
+}
+
+.nameProductSlide3 {
+	width: 80%;
+	display: flex;
+	padding: 0.7rem 1rem;
+
+}
+
+.nameProductSlide3>span, .priceProductSlide3>span {
+	font: 1.3rem Roboto-Black,sans-serif;
+	color: white;
+}
+
+.buttonSlide3 {
+	position: absolute;
+	padding: 0.7rem 1rem;
+	font: 1.14rem Roboto-Regular, sans-serif;
+	color: #555252;
+	background: none;
+	border: 0.07rem solid #000000;
+	top: 0.7rem;
+}
+
+.buttonNew {
+	left: 0.7rem;
+}
+
+.buttonSale {
+	right: 0.7rem;
+}
+
+.slide4 {
+	background: #000000ab;
+	background-image: url(../media/slide4/escalator-283448_1920.png);
+	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	background-size: 100vw 100%;
+	padding: 10rem 0 7.14rem;
+}
+
+.textSlide4 {
+	font: 4.3rem OpenSans-Extrabold,sans-serif;
+	color: white;
+	text-align: center;
+}
+
+.text2Slide4 {
+	font: 2.6rem OpenSans-Light, sans-serif;
+}
+
+.slide5 {
+	background-color: #e9f0fd;
+	padding: 5.7rem 0 7.1rem;
+}
+
+
+/*     Slide5!!!      */
+
+.hiddenSlide3 {
+	width: 90%;
+	height: 90%;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	background: #000000ab;
+	transition: 0.5s ease;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: -10;
+}
+
+.hidden1, .hidden2 {
+	width: 80%;
+	height: 20%;
+}
+
+.hidden2, .hidden1_1, .hidden1_2, .hidden1_3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.7rem;
+}
+
+.hidden2 {
+	background: #323232;
+	border: 0.07rem solid white;
+}
+
+.hidden1_1, .hidden1_3 {
+	height: 100%;
+	width: 30%;
+	background: none;
+	border: 0.07rem solid white;
+	box-sizing: border-box;
+}
+
+.hidden1_2 {
+	height: 100%;
+	width: 30%;
+	background: #1abc9c;
+	border: none;
+}
+
+.imgHidden {
+	width: 1.9rem;
+}
+
+.textForHidden {
+	font: 1rem OpenSans,sans-serif;
+	color: white;
+	margin-left: 1.4rem;
+}
+
+.textSlide5 {
+	background: none;
+}
+
+.textSlide5:hover .boxForImgSlide5 .hiddenSlide3 {
+	z-index: 10;
+}
+
+.textSlide5:hover .descriptionsSlide3 {
+	background-color: #1abc9c;
+}
+
+.boxForImgSlide5 {
+	height: 23.2rem;
+}
+
+.textSlide5 {
+	background-color: white;
+	margin-top: 5.7rem;
+}
+
+.imgSlide5 {
+	width: 18rem;
+}
+
+
+/*     Slide5!!!      */
+.slide10 {
+	margin: 5.7rem 0;
+}
+
+.slides {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nameSlide {
+	font: 3.43rem Roboto-Black, sans-serif;
+	color: #515151;
+}
+
+.boxForLines {
+	display: flex;
+	width: 15%;
+	flex-direction: column;
+}
+
+.forLines {
+	margin: 0.14rem auto;
+}
+
+#forImgSlide10 {
+	display: flex;
+	margin-top: 5.7rem;
+	width: 20rem;
+	overflow: hidden;
+	position: relative;
+}
+
+#lineSliderSlide10 {
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0;
+	left: -23.81rem;
+	transition: 0.8s ease;
+}
+
+.imgSlide10 {
+	width: 15.86rem;
+	border-radius: 50%;
+	margin-right: 10rem;
+}
+
+.textSlides {
+	font: 1rem OpenSans-Light, sans-serif;
+	width: 80%;
+	margin-top: 2.1rem;
+	color: #515151;
+	text-align: center;
+}
+
+#nameForMainImgSlide10 {
+	font: 1rem OpenSans-Light, sans-serif;
+}
+
+.namePersonImgSlide10 {
+	color: #1abc9c;
+	font: 1.3rem bold;
+}
+
+#boxForLinksImg {
+	display: flex;
+}
+
+.linkImgSlide10 {
+	width: 5.86rem;
+	height: 5.86rem;
+	border-radius: 50%;
+	border: 0.35rem solid black;
+	transition: 0.4s ease;
+}
+
+#secondPortret {
+	border: 0.35rem solid #1abc9c;
+	margin: 0 2.1rem;
+}
+
+.slide11 {
+	background-color: #4ec6ab;
+	background-image: url(../media/slide11/bg2decor-full.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 6.4rem 0 7.5rem;
+}
+
+.textSlide11 {
+	font: 1.14rem OpenSans-Light, sans-serif;
+	color: white;
+}
+
+.forInputSlide11 {
+	display: flex;
+	width: 50%;
+}
+
+.inputSlide11 {
+	width: 80%;
+	padding: 0 0 0 2.1rem;
+	border-top-left-radius: 0.35rem;
+	border-bottom-left-radius: 0.35rem;
+	border: none;
+	font: 1.14rem OpenSans-Light, sans-serif;
+	color: #555252;
+}
+
+.forSubmitSlide11 {
+	border: 2px solid white;
+	border-top-right-radius: 0.35rem;
+	border-bottom-right-radius: 0.35rem;
+	background-color: #4ec6ab;
+	padding: 1rem 1rem 1rem 1.8rem;
+	font-size: 1.4rem;
+	color: white;
+	max-height: 4.3rem;
+}
+
+.slide12 {
+	background-color: #e9f0fd;
+	padding: 5.7rem 0;
+}
+
+.partners {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 5.7rem;
+	flex-wrap: wrap;
+}
+
+.forImgPartners {
+	background-color: white;
+	display: flex;
+	width: 22%;
+	height: 10.7rem;
+}
+
+.imgPartnersSlide12 {
+	margin: 0 auto;
+	vertical-align: center;
+	width: 14rem;
+}
+
+.slide13 {
+	margin: 5.7rem 0;
+}
+
+.infoSlide13 {
+	display: flex;
+	justify-content: center;
+	margin-top: 5.36rem;
+	width: 100%;
+}
+
+.boxesDescriptions {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0 1rem;
+}
+
+.imgSlide13 {
+	width: 22rem;
+}
+
+.descriptionsSlide13 {
+	width: 85%;
+	font: 1.3rem OpenSans-Semibold, sans-serif;
+	color: #555252;
+	margin: 1rem 0 0.86rem;
+}
+
+.textSlide13 {
+	width: 80%;
+	font: 1rem OpenSans, sans-serif;
+	color: #555252;
+	margin-bottom: 1rem;
+}
+
+.forButtons {
+	border-radius: 0.21rem;
+	box-shadow: 0.07rem 0.1rem 0.35rem 0 rgba(0, 0, 0, 0.39);
+	border: none;
+	background-color: #4ec6ab;
+	padding: 1.3rem 3rem;
+	font: 1.2rem OpenSans-Light, sans-serif;
+	color: white;
+}
+
+.slide14 {
+	background-color: #323232;
+	padding: 5.7rem 0 7.14rem;
+	background-image: url(../media/slide14/world-map.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.nameSlide14 {
+	color: white;
+}
+
+.infoSlide14 {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 5.7rem;
+}
+
+.descriptionsSlide14 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.forLogoSlide14 {
+	font: 5.14rem Roboto-Light, sans-serif;
+	color: white;
+	margin: 0;
+}
+
+.forLogoM {
+	color: #46bfa9;
+}
+
+.textSlide14 {
+	font: 1rem Roboto-Light, sans-serif;
+	color: white;
+	line-height: 1.71;
+}
+
+.forNameTextSlide14 {
+	font: 1.3rem Roboto-Regular, sans-serif;
+}
+
+.contactsSlide14 {
+	font: 1rem Roboto-Light,sans-serif;
+	color: #ffffff;
+	line-height: 2;
+	margin-bottom: 1rem;
+}
+
+.forDotsSlide14 {
+	color: #fbfbfb;
+}
+
+.contactsAtributs {
+	font-family: Roboto-Bold,sans-serif;
+	color: #46bfa9;
+}
+
+.forSocialIcons {
+	display: flex;
+	align-items: center;
+}
+
+.iconsSlide14 {
+	width: 2.1rem;
+	height: 2.1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0.07rem solid white;
+	background: none;
+	margin-right: 0.7rem;
+}
+
+.socialIcons {
+	width: 1.3rem;
+}
+
+form {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.forInputsSlide14 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2.1rem;
+}
+
+.forInputs {
+	width: 45%;
+	border: 0.07rem solid white;
+	padding: 1rem 0 1rem 1.4rem;
+	font: 1.3rem Roboto-Light, sans-serif;
+	color: white;
+	border-radius: 0;
+	background: none;
+}
+
+.forInputs::-webkit-input-placeholder {
+	color: white;
+}
+
+textarea {
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 12.9rem;
+	min-height: 12.9rem;
+	box-sizing: border-box;
+	margin-bottom: 2.1rem;
+}
+
+.submitSlide14 {
+	padding: 1.4rem 3.57rem;
+	background-color: #46bfa9;
+	border: none;
+	font: 1.14rem Roboto-Regular, sans-serif;
+	color: white;
+}
+
+footer {
+	background: #000000;
+}
+
+.footer {
+	padding: 2.5rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+.textFooter {
+	font: 1.14rem OpenSans, sans-serif;
+	color: #fefefe;
+	margin: 0;
+}
+
+.textDecorationFooter {
+	color: #46bfa9;
+}

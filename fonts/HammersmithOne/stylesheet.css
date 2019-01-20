@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Hammersmith One';
+    src: url('HammersmithOne.woff2') format('woff2'),
+        url('HammersmithOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
